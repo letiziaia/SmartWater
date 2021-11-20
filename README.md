@@ -4,4 +4,7 @@
 
 [Watch the video](./temp/Android%20Emulator%20-%20Pixel_2_API_30_5554%202021-11-20%2023-30-32_Trim.mp4)
 
-<iframe  title="YouTube video player" width="480" height="390" src="http://www.youtube.com/watch?v=T-D1KVIuvjA?autoplay=1" frameborder="0" allowfullscreen></iframe>
+
+
+https://user-images.githubusercontent.com/45148109/142742062-e31a5930-72e8-4965-a76c-87f12a1ec06f.mp4
+
