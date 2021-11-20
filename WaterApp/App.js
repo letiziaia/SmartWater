@@ -8,34 +8,18 @@
 
 import React, { useState } from 'react';
 import type {Node} from 'react';
-import { 
-  totalConsumptionPerDevicePerApartment, 
-  singleDeviceConsumptionPerDayPerApartment,
-  averageTempPerApartment,
-  getApartment
-} from './utility/dataProcessing';
-import PieComponent from './components/PieComponent';
-import HeatmapComponent from './components/HeatmapComponent';
-import BarComponent from './components/BarComponent';
-import TopBar from './components/TopBar';
 import HomePage from './components/HomePage';
 import DeviceConsumption from './components/DeviceConsumption';
-import BottomTabs from './components/BottomTabs';
+import TreeScreen from './components/TreeScreen';
 import {
   Dimensions,
-  SafeAreaView,
-  ScrollView,
   StyleSheet,
   Image,
-  View,
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 const Tab = createBottomTabNavigator();
-
-const Stack = createNativeStackNavigator();
 
 
 const App: () => Node = () => {
@@ -60,8 +44,8 @@ const App: () => Node = () => {
           }} 
         />
         <Tab.Screen         
-          name="Tree"          
-          component={HomePage}  
+          name="How Much Water You Saved"          
+          component={TreeScreen}  
           options = {{
             tabBarLabel: '',
             tabBarIcon: (() => (<Image style={styles.tinyLogo} source={require('./assets/tree/ezgif-frame-196.jpg')}/>))
