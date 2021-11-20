@@ -32,7 +32,7 @@ We have worked with anonymized data or publicly available data.
 ## Team
 
 | <a>**Alena**</a> | <a>**Joonatan**</a> | <a>**Taige**</a> | <a>**Letizia**</a> |
-| :---: |:---:| :---:| :---:| :---:| 
+| :---: |:---:| :---:| :---:| 
 | [![Alena](https://avatars1.githubusercontent.com/u/22027871?s=400&v=4)](https://github.com/aischeveva)  |[![Joonatan](https://avatars2.githubusercontent.com/u/25590558?s=400&v=4)](https://github.com/jparta) | | [![Taige](https://avatars2.githubusercontent.com/u/16875716?s=200&v=4)](https://github.com/xiaoxiaobt) | [![Letizia](https://avatars1.githubusercontent.com/u/45148109?s=200&v=4)](https://github.com/letiziaia) |
 
 ---
