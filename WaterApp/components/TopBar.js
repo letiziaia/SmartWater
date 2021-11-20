@@ -16,10 +16,6 @@ const TopBar = ({ styles, kitchenIconClick, dishIconClick, laundryIconClick, bat
             <View style={styles.topBar} >
                 <TouchableOpacity onPress={kitchenIconClick}>
                     <Image style={styles.tinyLogo} 
-                            source={require('../assets/oras.png')} />
-                </TouchableOpacity>
-                <TouchableOpacity onPress={kitchenIconClick}>
-                    <Image style={styles.tinyLogo} 
                             source={require('../assets/kitchen.png')} />
                 </TouchableOpacity>
                 <TouchableOpacity onPress={dishIconClick}>

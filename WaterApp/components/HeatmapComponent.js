@@ -34,14 +34,18 @@ import {
 
     return (
       <View>
-        <Text style={styles.sectionTitle}>Water Consumption Patter by {device}, January-March</Text>
+        <Text style={styles.sectionTitle}>Water Consumption Pattern by {device}</Text>
         <ContributionGraph
           values={data}
           endDate={lastDate}
           numDays={days}
-          width={Dimensions.get('window').width}
-          height={220}
+          width={0.9*Dimensions.get('window').width}
+          height={300}
           chartConfig={chartConfig}
+          style={{
+            marginHorizontal: 0.05*Dimensions.get('window').width,
+            marginVertical: 8,
+          }}
         />
       </View>
     )

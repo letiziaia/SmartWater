@@ -18,92 +18,66 @@ import PieComponent from './components/PieComponent';
 import HeatmapComponent from './components/HeatmapComponent';
 import BarComponent from './components/BarComponent';
 import TopBar from './components/TopBar';
+import HomePage from './components/HomePage';
+import DeviceConsumption from './components/DeviceConsumption';
+import BottomTabs from './components/BottomTabs';
 import {
+  Dimensions,
   SafeAreaView,
   ScrollView,
-  StatusBar,
   StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-  Dimensions,
-  TouchableOpacity,
   Image,
+  View,
 } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+const Tab = createBottomTabNavigator();
+
+const Stack = createNativeStackNavigator();
 
 
 const App: () => Node = () => {
-  const [device, setDevice] = useState('Hydractiva_shower');
-
-  const firstAppartment = getApartment(0);
-
-  const devices = [
-    'Hydractiva_shower',
-    'Kitchen_optima_faucet',
-    'Optima_faucet',
-    'Washing_machine',
-    'Dishwasher',
-  ];
-
-  const kitchenIconClick = () => {
-    setDevice('Kitchen_optima_faucet')
-  }
-
-  const dishIconClick = () => {
-    setDevice('Dishwasher')
-  }    
-    
-  const laundryIconClick = () => {
-      setDevice('Washing_machine')
-  }
-
-  const bathroomIconClick = () => {
-      setDevice('Optima_faucet')
-  }
-
-  const showerIconClick = () => {
-      setDevice('Hydractiva_shower')
-  }
-  const colors = [
-    '#ffcdb2ff',
-    '#ffb4a2ff',
-    '#e5989bff',
-    '#b5838dff',
-    '#6d6875ff',
-  ];
-
-  const consumptionPerDevice = totalConsumptionPerDevicePerApartment(devices, colors, firstAppartment)
-  const showerAccumulate = singleDeviceConsumptionPerDayPerApartment(device, firstAppartment)
-  const averageTemp = averageTempPerApartment(devices, firstAppartment)
-
-
-  const backgroundStyle = {
-    backgroundColor: '#6d6875ff',
-  };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <TopBar styles={styles}
-        kitchenIconClick={kitchenIconClick}
-        dishIconClick={dishIconClick}
-        laundryIconClick={laundryIconClick}
-        bathroomIconClick={bathroomIconClick}
-        showerIconClick={showerIconClick} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <View>
-          <PieComponent data={consumptionPerDevice} styles={styles} />
-          <HeatmapComponent data={showerAccumulate} styles={styles} device={device} />
-          <BarComponent data={averageTemp} styles={styles}/>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Tab.Navigator>        
+        <Tab.Screen         
+          name="Home"          
+          component={HomePage}  
+          options = {{
+            tabBarLabel: '',
+            tabBarIcon: (() => (<Image style={styles.tinyLogo} source={require('./assets/oras.png')}/>))
+          }}             
+         />       
+        <Tab.Screen
+          name="Consumption by Device"
+          component={DeviceConsumption}
+          options = {{
+            tabBarLabel: '',
+            tabBarIcon: (() => (<Image style={styles.tinyLogo} source={require('./assets/devices.jpg')}/>))
+          }} 
+        />
+        <Tab.Screen         
+          name="Tree"          
+          component={HomePage}  
+          options = {{
+            tabBarLabel: '',
+            tabBarIcon: (() => (<Image style={styles.tinyLogo} source={require('./assets/tree/ezgif-frame-196.jpg')}/>))
+          }}             
+         /> 
+      </Tab.Navigator> 
+    </NavigationContainer>
+
   );
 };
 
 const styles = StyleSheet.create({
+  mainBackground: {
+    backgroundColor: '#6d6875ff',
+    height: Dimensions.get('window').height
+  },
   sectionContainer: {
     marginTop: 32,
     paddingHorizontal: 24,
@@ -122,8 +96,8 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   tinyLogo: {
-    width: 50,
-    height: 50,
+    width: 30,
+    height: 30,
   },
   topBar: {
       padding: 10,
