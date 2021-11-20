@@ -9,21 +9,25 @@ import {
 
 
 const TopBar = () => {
-    kitchenIconClick = () => {
+    const kitchenIconClick = () => {
         console.log('Touched kitchen')
-    }
-
-    dishIconClick = () => {
-        console.log('Touched dishwasher')
-    }    
+      };
       
-    laundryIconClick = () => {
+    const dishIconClick = () => {
+        console.log('Touched dishwasher')
+      };    
+          
+    const laundryIconClick = () => {
         console.log('Touched laundry')
-    }
-
-    bathroomIconClick = () => {
+      };
+    
+    const showerIconClick = () => {
         console.log('Touched bathoroom')
-    }
+      };
+      
+    const bathroomIconClick = () => {
+        console.log('Touched bathoroom')
+      };
 
     return (
         <SafeAreaView>
