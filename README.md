@@ -21,8 +21,6 @@ https://user-images.githubusercontent.com/45148109/142742062-e31a5930-72e8-4965-
 
 ### Clone
 
-### Clone
-
 - Clone this repo to your local machine using 
 ```shell
 $ git clone https://github.com/letiziaia/SmartWater.git
