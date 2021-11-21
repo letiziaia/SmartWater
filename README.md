@@ -7,6 +7,9 @@ The app is able to provide timely event-based notifications, for example when th
 
 Vesikäs also includes a comprehensive and interactive dashboard available through Power-BI in any web browser.
 
+[![Watch the video](https://img.youtube.com/vi/bF0I2w_wbjY/maxresdefault.jpg)](https://www.youtube.com/watch?v=bF0I2w_wbjY)
+
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -18,8 +21,6 @@ Vesikäs also includes a comprehensive and interactive dashboard available throu
 - [License](#license)
 
 ---
-
-https://user-images.githubusercontent.com/45148109/142742062-e31a5930-72e8-4965-a76c-87f12a1ec06f.mp4
 
 ## Installation
 
