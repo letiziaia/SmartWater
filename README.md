@@ -31,6 +31,9 @@ $ git clone https://github.com/letiziaia/SmartWater.git
 
 ## Usage
 
+### Power-BI dasboard
+
+![image_2021-11-21_02-27-49](https://user-images.githubusercontent.com/45148109/142745044-0236056f-934f-49f8-9e25-ad809fbf16d7.png)
 
 ---
 
