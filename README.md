@@ -2,6 +2,11 @@
 
 [Junction2021](https://www.junction2021.com/challenges/oras) 
 
+A cross-platform mobile app that provides detailed real-time statistics about water and power consumption inside the household. The app raises awareness about water and its usage  by providing insights and by helping establishing positive habits that benefit both the customers and the environment. Let your tree grow by saving water and get inspired by the quotes! 
+The app is able to provide timely event-based notifications, for example when the laundry or the dish-washer has completed the program and it is ready to unload. Moreover, the app notifies suspect anomalies based on past behavior, for example possible water leakages or unusual departures from established routines indicating possible health concerns. 
+
+Vesikäs also includes a comprehensive and interactive dashboard available through Power-BI in any web browser.
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -18,15 +23,14 @@ https://user-images.githubusercontent.com/45148109/142742062-e31a5930-72e8-4965-
 
 ## Installation
 
-### Requirements
-
 ### Clone
 
 - Clone this repo to your local machine using 
 ```shell
 $ git clone https://github.com/letiziaia/SmartWater.git
 ```
-
+ and then run the React Native app in your Android/iOS emulator.
+ 
 ---
 
 ## Usage
