@@ -59,7 +59,7 @@ We have worked with anonymized data or publicly available data.
 
 ## Credits
 
-The project was developed during Junction 2021 and the challenge was provided by [Oras](https://www.oras.com/en/home)].
+The project was developed during Junction 2021 and the challenge was provided by [Oras](https://www.oras.com/en/home).
 
 ---
 ## License
